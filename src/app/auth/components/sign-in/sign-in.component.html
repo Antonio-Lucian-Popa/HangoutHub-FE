@@ -27,7 +27,7 @@
       </select>
 
       <!-- Common fields for both account types -->
-      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="mb-3">
         <div class="mb-4">
           <label for="firstName" class="block text-gray-400">First Name:</label>
           <input id="firstName" formControlName="firstName" type="text" class="w-full p-2 bg-gray-700 text-gray-300 rounded-lg">
@@ -105,13 +105,14 @@
 
         <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700">Create Account</button>
       </form>
+
+      <p class="text-center text-gray-400 mt-6">Have an account? <a routerLink="/log-in" class="text-blue-400 hover:underline">Log In</a></p>
     </div>
 
     <!-- Right: Description -->
     <div class="w-full md:w-1/2 bg-blue-600 p-8 hidden md:flex flex-col justify-center text-white">
-      <h2 class="text-4xl font-bold mb-4">Explore the world's leading design portfolios.</h2>
-      <p class="text-lg mb-6">Millions of designers and agencies around the world showcase their portfolio work on
-        Flowbite - the home to the world's best design and creative professionals.</p>
+      <h2 class="text-4xl font-bold mb-4">Welcome!</h2>
+      <p class="text-lg mb-6">Find friends and the best places to hang out in your city. Discover restaurants, clubs, and more, and start creating memorable experiences!</p>
 
       <!-- Avatare cu spațiere redusă -->
       <div class="flex -space-x-4 justify-center md:justify-start">
@@ -123,6 +124,6 @@
           class="w-10 h-10 rounded-full border-2 border-white">
       </div>
 
-      <p class="mt-3 text-left">Over <span class="font-bold">15.7k Happy Customers</span></p>
+      <p class="mt-3 text-left">Over <span class="font-bold">15.7k Happy Users</span> finding friends and places to enjoy.</p>
     </div>
   </div>
